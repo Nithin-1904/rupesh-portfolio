@@ -56,7 +56,7 @@ const MobileSideBar = () => {
         <Button
           variant={"outline"}
           size={"icon"}
-          className={"mr-2 xl:hidden"}
+          className={"mr-2 lg:hidden"}
           onClick={() => {
             setIsSheetOpen(true);
           }}
