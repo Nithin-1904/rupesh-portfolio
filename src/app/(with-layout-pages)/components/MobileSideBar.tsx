@@ -77,7 +77,7 @@ const MobileSideBar = () => {
                   <Button
                     variant={"secondary"}
                     className={cn(
-                      "bg-background hover:bg-secondary w-full justify-start truncate border border-transparent px-2 shadow-none transition-all duration-150 ease-linear",
+                      "bg-background text-foreground hover:bg-secondary w-full justify-start truncate border border-transparent px-2 shadow-none transition-all duration-150 ease-linear",
                       isActive(sidebarLink?.href) &&
                         "border-primary/10 bg-secondary text-primary"
                     )}

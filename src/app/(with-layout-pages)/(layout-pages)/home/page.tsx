@@ -26,9 +26,13 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="bg-primary w-full py-4 text-3xl font-bold text-center">
-        Department Name
+      <div className="bg-[#ded263] dark:bg-[#28447b] w-full py-4 lg:pr-10 text-xl md:text-3xl font-bold text-center">
+        Neuro Science
       </div>
+
+      <footer className="w-full py-4 lg:pr-10 bg-primary text-xl md:text-3xl font-bold text-center">
+        <p>Copyright © 2025 Rupesh Chillale</p>
+      </footer>
     </div>
   );
 };
