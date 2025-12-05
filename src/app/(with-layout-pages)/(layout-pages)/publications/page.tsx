@@ -1,11 +1,13 @@
 import React from "react";
 import CardAccordion from "~/shadcn/custom/CardAccordion";
+import PageContainer from "~/shadcn/custom/PageContainer";
 
 const Publications = () => {
   return (
-    <main className="h-full w-full flex flex-col items-start gap-3 px-3 overflow-hidden sm:px-[100px] py-6">
-      <CardAccordion title="Journal Articles">
+    <PageContainer>
+      <CardAccordion title="Journal Articles" defaultOpen>
         <div className="sm:text-lg flex flex-col gap-3 pl-2 lg:text-xl">
+          {/* 1 */}
           <p>
             <span className="font-medium text-primary">1.</span> J. T.-H. Lien,
             A. Uppal,{" "}
@@ -25,6 +27,7 @@ const Publications = () => {
             </a>
           </p>
 
+          {/* 2 */}
           <p>
             <span className="font-medium text-primary">2.</span>{" "}
             <span className="font-semibold">Rupesh Kumar Chillale</span>, S.
@@ -41,6 +44,7 @@ const Publications = () => {
             </a>
           </p>
 
+          {/* 3 */}
           <p>
             <span className="font-medium text-primary">3.</span> M. Shoaib, R.
             C. Choudhary,{" "}
@@ -58,6 +62,7 @@ const Publications = () => {
             </a>
           </p>
 
+          {/* 4 */}
           <p>
             <span className="font-medium text-primary">4.</span> K. V.
             Kuchibhotla, T. H. Sten, E. S. Papadoyannis, et al., “Dissociating
@@ -66,7 +71,7 @@ const Publications = () => {
             <span className="font-semibold">Nature Communications</span>, vol.
             10, no. 1, May 2019.{" "}
             <a
-              href="https://faseb.onlinelibrary.wiley.com/doi/10.1096/fj.202200121R"
+              href="https://www.nature.com/articles/s41467-019-10089-0?error=server_error&error=server_error"
               target="_blank"
               className="font-mono hover:underline font-medium"
             >
@@ -74,6 +79,7 @@ const Publications = () => {
             </a>
           </p>
 
+          {/* 5 */}
           <p>
             <span className="font-medium text-primary">5.</span>{" "}
             <span className="font-semibold">Rupesh Kumar</span>, S. Bilal, and
@@ -84,7 +90,7 @@ const Publications = () => {
             </span>
             , vol. 26, no. 6, Jun. 2016.{" "}
             <a
-              href="https://faseb.onlinelibrary.wiley.com/doi/10.1096/fj.202200121R"
+              href="https://pubs.aip.org/aip/cha/article-abstract/26/6/063118/322478/Synchronization-properties-of-coupled-chaotic?redirectedFrom=fulltext"
               target="_blank"
               className="font-mono hover:underline font-medium"
             >
@@ -92,6 +98,7 @@ const Publications = () => {
             </a>
           </p>
 
+          {/* 6 */}
           <p>
             <span className="font-medium text-primary">6.</span>{" "}
             <span className="font-semibold">Rupesh Kumar</span>, R. Ramaswamy,
@@ -100,7 +107,7 @@ const Publications = () => {
             rats,” <span className="font-semibold">PLoS ONE</span>, vol. 8, no.
             10, Y. Abreu-Villaça, Ed., e78174, Oct. 2013.{" "}
             <a
-              href="https://faseb.onlinelibrary.wiley.com/doi/10.1096/fj.202200121R"
+              href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0078174"
               target="_blank"
               className="font-mono hover:underline font-medium"
             >
@@ -108,6 +115,7 @@ const Publications = () => {
             </a>
           </p>
 
+          {/* 7 */}
           <p>
             <span className="font-medium text-primary">7.</span>{" "}
             <span className="font-semibold">Rupesh Kumar</span>, A. Bose, and B.
@@ -116,7 +124,7 @@ const Publications = () => {
             <span className="font-semibold">PLoS ONE</span>, vol. 8, no. 10, Y.
             Abreu-Villaça, Ed., e78174, Oct. 2013.{" "}
             <a
-              href="https://faseb.onlinelibrary.wiley.com/doi/10.1096/fj.202200121R"
+              href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0042059"
               target="_blank"
               className="font-mono hover:underline font-medium"
             >
@@ -125,8 +133,8 @@ const Publications = () => {
           </p>
         </div>
       </CardAccordion>
-      <CardAccordion title="Conference Proceedings">
-        <div className="text-lg flex flex-col gap-3 pl-2">
+      <CardAccordion title="Conference Proceedings" defaultOpen>
+        <div className="sm:text-lg lg:text-xl flex flex-col gap-3 pl-2">
           <p>
             <span className="font-medium text-primary">1.</span> B. N. Mallick,
             A. Singh, M. Khanday, and{" "}
@@ -152,7 +160,7 @@ const Publications = () => {
           </p>
         </div>
       </CardAccordion>
-    </main>
+    </PageContainer>
   );
 };
 

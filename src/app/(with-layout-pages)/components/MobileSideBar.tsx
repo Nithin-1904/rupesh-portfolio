@@ -18,9 +18,9 @@ const SIDEBAR_LINKS = {
     href: "/home",
     icon: <LayoutPanelLeft />,
   },
-  people: {
-    name: "People",
-    href: "/people",
+  research: {
+    name: "Research",
+    href: "/research",
     icon: <LayoutPanelLeft />,
   },
   publications: {
