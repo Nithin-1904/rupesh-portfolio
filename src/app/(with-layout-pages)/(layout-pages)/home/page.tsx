@@ -1,6 +1,5 @@
 import Image from "next/image";
 import React from "react";
-import { Avatar, AvatarFallback, AvatarImage } from "~/shadcn/ui/avatar";
 import Education from "./components/Education";
 import EducationV2 from "./components/EducationV2";
 
@@ -23,7 +22,7 @@ const Home = () => {
               Assistant Professor, Ahmedabad University
             </h2>
             <h2 className="md:text-2xl font-bold">
-              rupeshchillale@ahduni.edu.in
+              rupesh.chillale@ahduni.edu.in
             </h2>
           </div>
         </div>
@@ -49,8 +48,9 @@ const Home = () => {
         <EducationV2 />
       </div>
 
-      <footer className="w-full py-4 lg:pr-10 bg-primary md:text-xl lg:text-2xl font-bold text-center">
-        <p>Copyright © 2025 Rupesh Chillale</p>
+      <footer className="w-full py-4 h-40 items-center bg-[#ded263] dark:bg-[#28447b] lg:text-lg font-medium flex flex-col justify-center lg:flex-row gap-2 lg:justify-between text-center">
+        <p className="w-5/6">Ahmedabad University, Ahmedabad, Gujarat, India</p>
+        <p className="w-5/6">rupesh.chillale@ahduni.edu.in</p>
       </footer>
     </div>
   );
