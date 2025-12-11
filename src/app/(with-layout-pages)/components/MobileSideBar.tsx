@@ -18,6 +18,11 @@ const SIDEBAR_LINKS = {
     href: "/home",
     icon: <LayoutPanelLeft />,
   },
+  people: {
+    name: "People",
+    href: "/people",
+    icon: <LayoutPanelLeft />,
+  },
   research: {
     name: "Research",
     href: "/research",
@@ -36,11 +41,6 @@ const SIDEBAR_LINKS = {
   outreach: {
     name: "Outreach",
     href: "/outreach",
-    icon: <LayoutPanelLeft />,
-  },
-  gallery: {
-    name: "Gallery",
-    href: "/gallery",
     icon: <LayoutPanelLeft />,
   },
 };

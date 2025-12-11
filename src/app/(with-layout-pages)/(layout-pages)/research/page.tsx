@@ -7,7 +7,7 @@ const Research = () => {
     <PageContainer>
       <div className="lg:grid lg:grid-cols-3 gap-4 flex flex-col">
         <Card className="w-full">
-          <CardHeader className="gap-0.5">
+          <CardHeader className="text-center gap-0.5">
             <CardTitle className="text-xl text-primary">
               Neurocognitive Underpinnings of Speech Comprehension
             </CardTitle>
@@ -45,7 +45,7 @@ const Research = () => {
           </CardContent>
         </Card>
         <Card className="w-full">
-          <CardHeader className="gap-0.5">
+          <CardHeader className="gap-0.5 text-center">
             <CardTitle className="text-xl text-primary">
               Multi modal integration
             </CardTitle>
@@ -65,7 +65,7 @@ const Research = () => {
           </CardContent>
         </Card>
         <Card className="w-full">
-          <CardHeader className="gap-0.5">
+          <CardHeader className="gap-0.5 text-center">
             <CardTitle className="text-xl text-primary">
               Music Representation within the Brain
             </CardTitle>

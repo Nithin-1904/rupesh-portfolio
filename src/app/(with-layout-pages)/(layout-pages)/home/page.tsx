@@ -1,5 +1,8 @@
 import Image from "next/image";
 import React from "react";
+import { Avatar, AvatarFallback, AvatarImage } from "~/shadcn/ui/avatar";
+import Education from "./components/Education";
+import EducationV2 from "./components/EducationV2";
 
 const Home = () => {
   return (
@@ -26,11 +29,27 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="bg-[#ded263] dark:bg-[#28447b] w-full py-4 lg:pr-10 text-xl md:text-3xl font-bold text-center">
-        Neuro Science
+      <div className="bg-[#ded263] dark:bg-[#28447b] flex flex-col gap-3 w-full py-4 lg:pr-10 text-center">
+        <h2 className="text-xl md:text-3xl font-bold">About Me</h2>
+        <p className="text-lg leading-relaxed px-10 sm:px-16 md:px-24 lg:px-48">
+          I am <strong>Dr. Rupesh Kumar Chillale</strong>, a neuroscientist
+          exploring how the brain processes sound — including speech and music —
+          using{" "}
+          <strong>EEG, electrophysiology, and computational modeling</strong>.
+          My work blends human and animal studies to uncover how the brain
+          interprets sound and transforms perception into behavior.
+        </p>
       </div>
 
-      <footer className="w-full py-4 lg:pr-10 bg-primary text-xl md:text-3xl font-bold text-center">
+      <div className="hidden xl:block">
+        <Education />
+      </div>
+
+      <div className="block xl:hidden">
+        <EducationV2 />
+      </div>
+
+      <footer className="w-full py-4 lg:pr-10 bg-primary md:text-xl lg:text-2xl font-bold text-center">
         <p>Copyright © 2025 Rupesh Chillale</p>
       </footer>
     </div>

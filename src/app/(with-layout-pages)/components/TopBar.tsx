@@ -10,11 +10,11 @@ import MobileSideBar from "./MobileSideBar";
 
 const navItems = [
   { label: "Home", path: "/home" },
+  { label: "People", path: "/people" },
   { label: "Research", path: "/research" },
   { label: "Publications", path: "/publications" },
   { label: "Teaching", path: "/teaching" },
   { label: "Outreach", path: "/outreach" },
-  { label: "Gallery", path: "/gallery" },
 ];
 
 const TopBar = () => {
