@@ -88,25 +88,3 @@ const Research = () => {
 };
 
 export default Research;
-
-const ResearchCard = () => {
-  return (
-    <Card className="w-full">
-      <CardHeader className="gap-0.5 text-center">
-        <CardTitle className="text-xl text-primary">
-          Music Representation within the Brain
-        </CardTitle>
-      </CardHeader>
-      <CardContent>
-        <p>
-          Grounded in the predictive coding framework, our research postulates
-          that continuous prediction during music listening is pivotal to the
-          perception of music. In this line of investigation, we examine music
-          enculturation by exposing ferrets to classical compositions by Bach
-          and observe its impact on the predictive signals within the brain,
-          utilizing microelectrocorticography (μECoG) as a monitoring tool.
-        </p>
-      </CardContent>
-    </Card>
-  );
-};

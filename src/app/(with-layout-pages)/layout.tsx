@@ -4,7 +4,7 @@ import MainLayout from "./components/MainLayout";
 
 export const metadata: Metadata = {
   title: "Rupesh Kumar",
-  description: "Descripiton",
+  icons: [{ rel: "icon", url: "/brain.png" }],
 };
 
 const Layout = ({ children }: { children: ReactElement }) => {

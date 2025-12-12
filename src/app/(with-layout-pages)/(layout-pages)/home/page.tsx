@@ -1,57 +1,77 @@
 import Image from "next/image";
 import React from "react";
-import Education from "./components/Education";
-import EducationV2 from "./components/EducationV2";
 
 const Home = () => {
   return (
     <div>
-      <div className="relative w-full overflow-hidden">
+      <div className="relative w-full h-52 overflow-hidden">
         <Image
           src={"/the_starry_night.jpg"}
           alt="Background"
           fill
-          className="object-cover opacity-50 dark:opacity-40 z-0"
+          className="object-cover z-0"
         />
-        <div className="relative z-10 w-full flex flex-col items-center justify-center py-24 lg:pr-10 gap-10 flex-wrap">
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold whitespace-nowrap">
-            Rupesh Chillale
-          </h1>
-          <div className="flex flex-col items-center justify-center flex-wrap gap-4">
-            <h2 className="text-lg md:text-2xl font-bold">
-              Assistant Professor, Ahmedabad University
-            </h2>
-            <h2 className="md:text-2xl font-bold">
-              rupesh.chillale@ahduni.edu.in
-            </h2>
-          </div>
-        </div>
       </div>
 
-      <div className="bg-[#ded263] dark:bg-[#28447b] flex flex-col gap-3 w-full py-4 lg:pr-10 text-center">
-        <h2 className="text-xl md:text-3xl font-bold">About Me</h2>
-        <p className="text-lg leading-relaxed px-10 sm:px-16 md:px-24 lg:px-48">
-          I am <strong>Dr. Rupesh Kumar Chillale</strong>, a neuroscientist
-          exploring how the brain processes sound — including speech and music —
-          using{" "}
-          <strong>EEG, electrophysiology, and computational modeling</strong>.
-          My work blends human and animal studies to uncover how the brain
-          interprets sound and transforms perception into behavior.
+      <div className="flex flex-col gap-3 w-full py-4 lg:pr-10 text-center">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold">
+          Auditory & System Neuroscience Lab
+        </h1>
+        <h2 className="text-lg md:text-2xl font-bold">Ahmedabad University</h2>
+      </div>
+
+      <div className="flex flex-col md:flex-row justify-center gap-5 md:items-start items-center p-10">
+        <Image
+          src={"/picture.jpg"}
+          alt="Headshot"
+          height={250}
+          width={250}
+          className="object-cover rounded-md"
+        />
+
+        <p className="text-lg text-center md:text-start">
+          I am an assistant professor in the{" "}
+          <a
+            href="https://ahduni.edu.in/academics/schools-centres/school-of-arts-and-sciences/"
+            target="_blank"
+            className="underline"
+          >
+            School of Arts and Sciences
+          </a>{" "}
+          at{" "}
+          <a
+            href="https://www.ahmedabaduniversity.edu.in/"
+            target="_blank"
+            className="underline"
+          >
+            Ahmedabad University
+          </a>
+          . My lab is interested in how the brain learns, predicts, and
+          processes complex auditory and multimodal signals. My work focuses on
+          the neural mechanisms underlying speech, music, and movement
+          perception, and how these sensory experiences shape cognition and
+          behaviour. I use EEG, micro-ECoG, behavioural paradigms, and
+          computational modelling to study how the brain transforms sound and
+          action into meaningful representations.
         </p>
       </div>
 
-      <div className="hidden xl:block">
-        <Education />
+      <div className="relative flex flex-col lg:flex-row gap-5 justify-center lg:justify-end overflow-hidden items-center p-10">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.608671241223!2d72.5543807!3d23.0381364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e848d5f86040f%3A0x7a0cc8b624851642!2sAhmedabad%20University!5e0!3m2!1sen!2sin!4v1765472639897!5m2!1sen!2sin"
+          allowFullScreen
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+          className="border md:w-[400px] md:h-[200px] border-foreground"
+        ></iframe>
+        <Image
+          src={"/logo.jpg"}
+          alt="Headshot"
+          height={60}
+          width={60}
+          className="lg:absolute top-28 left-[48%] object-cover rounded-md"
+        />
       </div>
-
-      <div className="block xl:hidden">
-        <EducationV2 />
-      </div>
-
-      <footer className="w-full py-4 h-40 items-center bg-[#ded263] dark:bg-[#28447b] lg:text-lg font-medium flex flex-col justify-center lg:flex-row gap-2 lg:justify-between text-center">
-        <p className="w-5/6">Ahmedabad University, Ahmedabad, Gujarat, India</p>
-        <p className="w-5/6">rupesh.chillale@ahduni.edu.in</p>
-      </footer>
     </div>
   );
 };

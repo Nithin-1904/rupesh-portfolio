@@ -3,7 +3,14 @@ import { usePathname } from "next/navigation";
 
 import { HamburgerMenuIcon } from "@radix-ui/react-icons";
 
-import { LayoutPanelLeft } from "lucide-react";
+import {
+  BookOpenText,
+  House,
+  Microscope,
+  SatelliteDish,
+  Speech,
+  Users,
+} from "lucide-react";
 
 import Link from "next/link";
 
@@ -16,32 +23,32 @@ const SIDEBAR_LINKS = {
   home: {
     name: "Home",
     href: "/home",
-    icon: <LayoutPanelLeft />,
+    icon: <House />,
   },
   people: {
     name: "People",
     href: "/people",
-    icon: <LayoutPanelLeft />,
+    icon: <Users />,
   },
   research: {
     name: "Research",
     href: "/research",
-    icon: <LayoutPanelLeft />,
+    icon: <Microscope />,
   },
   publications: {
     name: "Publications",
     href: "/publications",
-    icon: <LayoutPanelLeft />,
+    icon: <BookOpenText />,
   },
   teaching: {
     name: "Teaching",
     href: "/teaching",
-    icon: <LayoutPanelLeft />,
+    icon: <Speech />,
   },
   outreach: {
     name: "Outreach",
     href: "/outreach",
-    icon: <LayoutPanelLeft />,
+    icon: <SatelliteDish />,
   },
 };
 
